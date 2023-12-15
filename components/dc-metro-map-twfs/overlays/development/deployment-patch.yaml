@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-twfs
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-bwnk-tenant/appstudio/dc-metro-map-twfs@sha256:8d5fb955cab4fb6cffe0e51accbe04a9da5e358b19654c8f545b0456e73a8ef3
+        name: my-nodejs
+        resources: {}
+status: {}
