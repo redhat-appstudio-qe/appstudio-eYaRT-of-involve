@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: dc-metro-map-twfs
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/happy-path-bwnk-tenant/appstudio/dc-metro-map-twfs@sha256:8d5fb955cab4fb6cffe0e51accbe04a9da5e358b19654c8f545b0456e73a8ef3
         name: my-nodejs
         ports:
         - containerPort: 3001
